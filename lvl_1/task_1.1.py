@@ -22,3 +22,11 @@ print(second_song)
 # второй с конца трек
 second_to_last_song = my_favorite_songs[my_favorite_songs.rindex(',', 0, my_favorite_songs.rindex(','))-1:my_favorite_songs.rindex(',')]
 print(second_to_last_song)
+
+# Да, супер) 
+# Можно также воспользоваться методом split
+
+# Решение с помощью метода split() и индексации списков
+songs = my_favorite_songs.split(', ')
+
+print(songs[0], songs[-1], songs[1], songs[-2])
